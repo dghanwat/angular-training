@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
   color: white;
   background-color: black;
 }
@@ -122,7 +122,7 @@ a:focus {
   width: 100%;
   height: auto;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
   color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: black;
@@ -315,4 +315,9 @@ body {
 
 input:text {
     color: #000 !important;
+}
+
+.row {
+    line-height: 2;
+    padding-bottom: 5px;
 }
