@@ -8,6 +8,7 @@ angular.module('myApp', [
   'angularjs-training.controllerinheritance',
   'angularjs-training.promise',
   'angularjs-training.survey',
+  'angularjs-training.directives',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $routeProvider.otherwise({redirectTo: '/helloworld'});
