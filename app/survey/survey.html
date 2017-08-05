@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col-md-12">
+		<h2>Survey Form</h2>
+	</div>
+</div>
+<form name="surveyForm" novalidate ng-submit="submitForm();">
+	<div class="row">
+		<div class="col-md-2">
+			First name:
+		</div>
+		<div class="col-md-6">
+			<input type="text" name="firstName" ng-model="name" required ng-minlength="3" ng-maxlength="20" size="50"/>
+			<span style="color:red" ng-show="surveyForm.firstName.$dirty && surveyForm.firstName.$invalid" />
+			<span ng-show="surveyForm.firstName.$error.required">Username is required.</span>
+			<span ng-show="surveyForm.firstName.$error.minlength">Too short!</span>
+        	<span ng-show="surveyForm.firstName.$error.maxlength">Too long!</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			Email:
+		</div>
+		<div class="col-md-3">
+			<input type="email" ng-model="email" required  size="50"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			Comments:
+		</div>
+		<div class="col-md-3">
+			<textarea data-ng-model="comments" data-ng-required cols="51"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<input type="submit" ng-disabled="surveyForm.$invalid" value="Submit" >
+		</div>
+	</div>
+
+</form>
