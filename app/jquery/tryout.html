@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>jQuery Hello World</title>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#msgid").html("This is Hello World by JQuery");
+        var checkedBoxes = $(".group1:checked");
+        var allBoxes = $(".group1");
+        if(allBoxes.length == checkedBoxes.length) {
+            alert("All checkboxes checked");
+        } else {
+            alert("All checkboxes are not checked");
+        }
+
+    });
+
+    </script>
+
+
+
+    <div id="msgid">
+    </div>
+    <input type="checkbox" class="group1" value="20" checked/>
+    <input type="checkbox" class="group1" value="15" checked />
+    <input type="checkbox" class="group1" value="14"  checked />
+
+</body>
+</html>
